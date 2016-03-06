@@ -28,13 +28,13 @@ dinnerPlannerApp.factory('Dinner',function ($resource, $cookieStore) {
 	// BigOvenApi
 	this.DishSearch = $resource(
 		'http://api.bigoven.com/recipes',
-		{pg:1,rpp:25,api_key:'dvx6H6QTYoSVG1J9p9BaIcf097ZInDlP'}
+		{pg:1,rpp:25,api_key:'r02x0R09O76JMCMc4nuM0PJXawUHpBUL'}
 	);
 
 	// Resource to get the dish with the specific RecipeID.
 	this.Dish = $resource(
 		'http://api.bigoven.com/recipe/:id',
-		{api_key:'dvx6H6QTYoSVG1J9p9BaIcf097ZInDlP'}
+		{api_key:'r02x0R09O76JMCMc4nuM0PJXawUHpBUL'}
 	);
 
 	// When launching the application, check the cookie to see
