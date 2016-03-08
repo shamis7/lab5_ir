@@ -2,46 +2,46 @@
 <!-- Notice the ng-app Angular directive. This tells Angular where the application starts and also
 which module to associate the app with. In app.js we create the "dinnerPlanner" module. -->
 <html lang="en" ng-app="dinnerPlanner">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Dinner planner</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dinner planner</title>
 
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-		<!-- Common CSS -->
-		<link rel="stylesheet" href="stylesheets/common.css">
-		<!-- jQuery -->
-		<script src="bower_components/jquery/dist/jquery.js"></script>
-		<!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<!-- Underscore -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-		
-		<!-- Angular JavaScript including routing, resource modules and cookies -->
-		<script src="bower_components/angular/angular.js"></script>
-		<script src="bower_components/angular-route/angular-route.js"></script>
-		<script src="bower_components/angular-resource/angular-resource.js"></script>
-		<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <!-- Common CSS -->
+        <link rel="stylesheet" href="stylesheets/common.css">
+        <!-- jQuery -->
+        <script src="bower_components/jquery/dist/jquery.js"></script>
+        <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
+        <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- Underscore -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
 
-		<!-- The application JavaScript code -->
-		<script src="js/app.js"></script>
-		<script src="js/dinnerService.js"></script>
-		<script src="js/searchCtrl.js"></script>
-		<script src="js/dinnerCtrl.js"></script>
-		<script src="js/dishCtrl.js"></script>
+        <!-- Angular JavaScript including routing, resource modules and cookies -->
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="bower_components/angular-route/angular-route.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.js"></script>
 
-	</head>
-	<body>
-		<div class="container-fluid">
-			<div class="row main-header box">
-				<div class="row">
-					<div class="title col-sm-4"><a href="#/home">HOMELETTE</a></div>
-					<div class="subtitle col-sm-8">From the best chefs in the world directly into your kitchen</div>
-				</div>
-			</div>
-			<div ng-view></div>
-		</div>
-	</body>
+        <!-- The application JavaScript code -->
+        <script src="js/app.js"></script>
+        <script src="js/dinnerService.js"></script>
+        <script src="js/searchCtrl.js"></script>
+        <script src="js/dinnerCtrl.js"></script>
+        <script src="js/dishCtrl.js"></script>
+
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row main-header box">
+                <div class="row">
+                    <div class="title col-sm-4"><a href="#/home">HOMELETTE</a></div>
+                    <div class="subtitle col-sm-8">From the best chefs in the world directly into your kitchen</div>
+                </div>
+            </div>
+            <div ng-view></div>
+        </div>
+    </body>
 </html>

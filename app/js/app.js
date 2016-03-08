@@ -1,4 +1,4 @@
-// We setup the main Angular model that we will use for our application
+    // We setup the main Angular model that we will use for our application
 // Good Angular practice is to organize your code in different modules, 
 // for instance, one module per feature. However, since our App is
 // simple we will keep all the code in the "dinnerPlanner" module
