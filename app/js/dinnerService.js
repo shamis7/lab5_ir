@@ -10,7 +10,7 @@ dinnerPlannerApp.factory('Dinner',function ($resource, $cookieStore) {
   // you will need to modify the model (getDish and getAllDishes) 
   // a bit to take the advantage of Angular resource service
   // check lab 5 instructions for details
-
+  
 
 
 
@@ -28,13 +28,13 @@ dinnerPlannerApp.factory('Dinner',function ($resource, $cookieStore) {
 	// BigOvenApi
 	this.DishSearch = $resource(
 		'http://api.bigoven.com/recipes',
-		{pg:1,rpp:25,api_key:'r02x0R09O76JMCMc4nuM0PJXawUHpBUL'}
+		{pg:1,rpp:25,api_key:'XKEdN82lQn8x6Y5jm3K1ZX8L895WUoXN'}
 	);
 
 	// Resource to get the dish with the specific RecipeID.
 	this.Dish = $resource(
 		'http://api.bigoven.com/recipe/:id',
-		{api_key:'r02x0R09O76JMCMc4nuM0PJXawUHpBUL'}
+		{api_key:'XKEdN82lQn8x6Y5jm3K1ZX8L895WUoXN'}
 	);
 
 	// When launching the application, check the cookie to see
@@ -69,7 +69,8 @@ dinnerPlannerApp.factory('Dinner',function ($resource, $cookieStore) {
 		_.each(menu, function (dish) {
 			confirmedMenu.push(dish.RecipeID);
 		}, this);
-		$cookieStore.put('confirmedMenu',confirmedMenu);
+		$cookieStore.put('confirmedMenu', confirmedMenu);
+                
 		return menu;
 	};
 
@@ -109,6 +110,7 @@ dinnerPlannerApp.factory('Dinner',function ($resource, $cookieStore) {
 	// the menu and the new one added.
 	this.addDishToMenu = function (dish) {
 		menu[dish.Category] = dish;
+
 	}
 
 	// Removes the passed dish from the menu if it is already
